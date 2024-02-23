@@ -88,8 +88,20 @@ function drawCat(x, y, size) {
   ellipse(300, 120, 30, 30);
 
   fill(265, 130, 250);
+  ellipse(x + 22, y + 72, 20, 15);
+  ellipse(x - 18, y + 72, 20, 15);
+  
+  fill(265, 130, 250);
   stroke(200, 130, 50);
   triangle(x - 46, y - 96, x - 47, y - 70, x - 38, y - 80);
   triangle(x + 46, y - 96, x + 47, y - 70, x + 38, y - 80);
   fill(255, 180, 50);
+
+  // Draw the arc with respect to the cat's position
+  arc(x + 41, y + 30, 90, 50, 0, HALF_PI);
+  
+  
+  
+  
+  
 }
